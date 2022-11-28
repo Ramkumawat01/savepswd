@@ -1,0 +1,315 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body
+{
+    background: rgb(106, 94, 184);
+}
+
+.mobileBody
+{
+    width: 350px;
+    height: 700px;
+    background: white;
+    margin: 5px auto;
+    border: 8px solid #000;
+    border-radius: 40px;
+}
+
+.mobileBody header
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.mobileBody header h2
+{
+    font-size: 1.5em;
+    font-weight: bold;
+    padding: 20px;
+}
+
+.mobileBody header .search
+{
+    width: 30px;
+    height: 30px;
+    background: #d3d3d35c;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+
+.mobileBody .account
+{
+    width:300px;
+    height: 120px;
+    background: rgb(106, 94, 184);
+    border-radius: 20px;
+    margin: 10px auto;
+}
+
+.mobileBody .account h3
+{
+    color: rgba(255, 255, 255, 0.84);
+    font-size: 1.2em;
+    padding: 15px;
+}
+
+.mobileBody .account p a 
+{
+    text-decoration: none;
+    font-size: 0.9em;
+    color: rgba(239, 201, 201, 0.722);
+    padding: 15px;
+}
+
+.mobileBody .accounts
+{
+    position: relative;
+    width: 300px;
+    height: 68px;
+    margin: 0 auto;
+    display: flex;
+    justify-content:flex-start;
+    align-items:center;
+}
+
+.mobileBody .accounts .imgBx
+{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: rgba(237, 234, 234, 0.942);
+    margin: 10px;
+    text-align: center;
+}
+.mobileBody .accounts:nth-child(4) .imgBx
+{
+    background: #03a8f42b;
+}
+
+.mobileBody .accounts:nth-child(5) .imgBx
+{
+    background: rgba(249, 191, 201, 0.615);
+}
+
+.mobileBody .accounts:nth-child(7) .imgBx
+{
+    background: #5865f228;
+}
+
+.mobileBody .accounts:nth-child(8) .imgBx
+{
+    background: #0085cc13;
+}
+
+
+.mobileBody .accounts .imgBx img
+{
+    position: relative;
+    top: 13px;
+    left: 0;
+    width: 26px;
+    height: 26px;
+}
+
+.mobileBody .accounts .textBx {position: relative;}
+
+.mobileBody .accounts .textBx h5
+{
+    font-size: 0.8em;
+    font-weight: 600;
+    color: #000;
+}
+.mobileBody .accounts .textBx span img
+{
+    position: absolute;
+    top: -3px;
+    left: 130px;
+}
+
+.mobileBody .accounts .textBx small
+{
+    color: #777;
+    font-weight: 700;
+    font-size: 12px;
+}
+
+footer
+{
+    width: 310px;
+    height: 60px;
+    background: rgba(237, 231, 231, 0.334);
+    margin: 0 auto;
+    border-radius: 20px;
+    position: relative;
+}
+
+footer ul
+{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+footer ul li
+{
+    list-style: none;
+    margin: 22px;
+}
+
+footer ul li:nth-child(3)::before
+{
+    content: '';
+    width: 50px;
+    height: 50px;
+    background: rgb(74, 50, 232);
+    position: absolute;
+    top: 7px;
+    left: 130px;
+    opacity: 0.5;
+    border-radius: 50%;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+body
+{
+	margin: 0;
+	padding: 0;
+	font-family: 'Poppins', sans-serif;
+	background:url(bg.jpg) no-repeat; 
+	background-size: cover;
+	background-attachment: fixed;
+}
+
+section
+{
+	position: relative;
+	max-width: 100%;
+	margin: 20px auto;
+	padding: 10px;
+	background:#fff;
+	box-sizing: border-box;
+	border-radius: 5px; 
+	box-shadow: 0 2px 5px rgba(0,0,0,.2);	
+}
+
+
+.logo
+{
+	color: #069370;
+	height: 60px;
+	font-size: 35px;
+	line-height: 60px;
+	padding: 0 20px;
+	text-align: center;
+	box-sizing: border-box;
+	float:  left;
+	font-weight: 700;
+	text-decoration: none;
+}
+
+nav
+{
+	float: right;
+}
+
+.clearfix
+{
+	clear: both;
+}
+
+nav ul 
+{
+	margin: 0;
+	padding: 0;
+	display: flex;
+}
+
+nav ul li 
+{
+	list-style: none;
+}
+
+nav ul li a
+{
+	display: block;
+	margin: 10px 0;
+	padding: 10px 20px;
+	text-decoration: none;
+	color: #262626;
+}
+
+@media (max-width: 1200px)
+{
+	section
+	{
+		margin: 20px;
+	}
+}
+
+@media (max-width: 768px)
+{
+	.menu-bar
+	{
+		display: block;
+		width: 40px;
+		height: 40px;
+		margin: 10px;
+		float: right;
+		cursor: pointer;
+		text-align: center;
+		font-size: 30px;
+		color: #069370;
+	}
+	.menu-bar:before
+	{
+		content: '\f0c9';
+		font-family: FontAwesome;
+		line-height: 40px;
+	}
+	.menu-bar.active:before
+	{
+		content: '\f00d';
+	}
+
+	nav
+	{
+		display: none;
+	}
+
+	nav.active
+	{
+		display: block;
+		width: 100%;
+	}
+	nav.active ul
+	{
+		display: block;
+	}
+
+	nav.active ul li
+	{
+		margin: 0;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
