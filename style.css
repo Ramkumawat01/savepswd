@@ -176,6 +176,9 @@ footer ul li:nth-child(3)::before
     border-radius: 50%;
 }
 
+/* Navbar */
+
+
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
 
 body
@@ -192,12 +195,11 @@ section
 {
 	position: relative;
 	max-width: 100%;
-	margin: 20px auto;
+	margin: 10px 20px;
 	padding: 10px;
-	background:#fff;
+	background:#f3f0f0;
 	box-sizing: border-box;
-	border-radius: 5px; 
-	box-shadow: 0 2px 5px rgba(0,0,0,.2);	
+	border-radius: 3px; 
 }
 
 
